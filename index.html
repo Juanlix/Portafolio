@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Juan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="nav">
+                <ul class="nav__list">
+                <li class="nav__item">
+                        <a href="index.html"class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                        <a href="SobreMi.html"class="nav__link">Sobre mi</a>
+                </li>
+                <li class="nav__item">
+                        <a href="Experiencia.html"class="nav__link">Educacion/Experiencia</a>
+                </li >
+                <li class="nav__item">
+                        <a href="Proyectos.html"class="nav__link">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                        <a href="Contacto.html"class="nav__link">Contacto</a>
+                </li>
+                </ul>
+                
+        </nav>
+        <div id="home">
+        
+        <h1>Juan Diego Gomez </h1>
+        <h2>Desarrollador de Videojuegos</h2>
+        <img src="FotoRosa.jpg" alt="Foto de Juan" class="foto-inicio">
+
+
+        <p>Hola, soy Juan Diego Gomez, soy un estudiante de diseño y programacion de la cuenca de la plata, me destaco mas que nada en la parte de programacion, tengo 18 años y poseo Experiencia laboral trabajando para empresas, puedes saber mas en <a href="Experiencia.html"> Educacion/Experiencia </a></p>
+        </div>
+        <h2 id="home">Algunas fotos de mi</h2>
+        <div class="slider-container" id>
+                
+                <div class="slider-images">
+                <img src="foto presentable.png" alt="Imagen 1">
+                <img src="fotoFoz.jpg" alt="Imagen 2">
+                <img src="FotoRosa.jpg" alt="Imagen 3">
+                </div>
+                <button class="slider-button prev-button" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-button next-button" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <script src="scripts.js"></script>
+</body>
+</html>
