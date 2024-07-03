@@ -1,0 +1,147 @@
+
+.hole{
+width: 200px;
+height: 200px;
+border-style: solid;
+border-color: black;
+}
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 618px;
+    height: 618px;
+
+}
+
+.topo{
+    background-image: url(topopng.webp);
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8811e9;
+}
+
+.nav {
+    background-color:rgb(133, 68, 238);
+}
+
+.nav__list {
+    margin: 0;
+}
+
+.nav__item{
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(133, 68, 238);
+}
+
+.nav__link{
+    color: white;
+    text-decoration: none;
+}
+.nav__item:hover{background-color: rgb(70, 18, 226);}
+
+#home {
+    color: #cacee4;
+    background-color: #8811e9;
+    padding: 20px;
+    border: 0px solid #cacee4;
+    margin-top: 0px;
+}
+#SobreMi {
+    color: #cacee4;
+    background-color: #8811e9;
+    padding: 20px;
+    border: 0px solid #cacee4;
+    margin-top: 0px;
+}
+#Trabajo {
+    color: #cacee4;
+    background-color:  #8811e9;
+    padding: 20px;
+    border: 0px solid #cacee4;
+    margin-top: 0px;
+}
+#Proyectos {
+    color: #cacee4;
+    background-color: #8811e9;
+    padding: 20px;
+    border: 0px solid #cacee4;
+    margin-top: 0px;
+}
+#Contacto {
+    color: #cacee4;
+    background-color:  #8811e9;
+    padding: 0px;
+    border: 0px solid #cacee4;
+    margin-top: 0px;
+}
+
+.foto-inicio {
+    width: 260px;  /* Ancho de la imagen */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+.foto-sobremi{
+    width: 320px;  /* Ancho de la imagen */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    background: #000;
+    
+}
+
+.slider-images {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images .slide {
+    min-width: 50%;
+    box-sizing: border-box;
+    
+}
+
+.slider-images img {
+    width: 100%;
+    height: 550px;
+    display: block;
+    
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
