@@ -68,6 +68,10 @@ body{
     width: 320px;  /* Ancho de la imagen */
     height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
 }
+.foto-streesbuster{
+    width: 400px;  /* Ancho de la imagen */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
 .slider-container {
     position: relative;
     width: 100%;
