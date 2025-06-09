@@ -1,128 +1,106 @@
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(133, 68, 238);
+/* Paleta personalizada */
+:root {
+  --cream: rgb(239, 219, 191);
+  --cherry: rgb(172, 48, 48);
+  --deep-red: rgb(104, 24, 31);
+  --midnight: rgb(18, 18, 17);
 }
 
-.nav {
-    background-color:rgb(133, 68, 238);
+body {
+  background-color: var(--midnight);
+  color: var(--cream);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.nav__list {
-    margin: 0;
+/* Navbar personalizada */
+.navbar-custom {
+  background-color: var(--deep-red);
 }
 
-.nav__item{
-    display: inline-block;
-    padding: 20px;
-    background-color: rgb(133, 68, 238);
+.nav-link {
+  color: var(--cream) !important;
 }
 
-.nav__link{
-    color: white;
-    text-decoration: none;
-}
-.nav__item:hover{background-color: rgb(70, 18, 226);}
-
-#home {
-    color: #cacee4;
-    background-color: #8811e9;
-    padding: 20px;
-    border: 0px solid #cacee4;
-    margin-top: 0px;
-}
-#SobreMi {
-    color: #cacee4;
-    background-color: #8811e9;
-    border: 0px solid #cacee4;
-    margin-top: 0px;
-}
-#Trabajo {
-    color: #cacee4;
-    background-color:  #8811e9;
-    padding: 20px;
-    border: 0px solid #cacee4;
-    margin-top: 0px;
-}
-#Proyectos {
-    color: #cacee4;
-    background-color: #8811e9;
-    padding: 20px;
-    border: 0px solid #cacee4;
-    margin-top: 0px;
-}
-#Contacto {
-    color: #cacee4;
-    background-color:  #8811e9;
-    padding: 0px;
-    border: 0px solid #cacee4;
-    margin-top: 0px;
+.nav-link:hover {
+  color: var(--cherry) !important;
 }
 
-.foto-inicio {
-    width: 260px;  /* Ancho de la imagen */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+/* Botones personalizados */
+.btn-cherry {
+  background-color: var(--cherry);
+  color: var(--cream);
+  border: none;
 }
-.foto-sobremi{
-    width: 320px;  /* Ancho de la imagen */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+
+.btn-cherry:hover {
+  background-color: rgb(140, 30, 30);
+  color: var(--cream);
 }
-.foto-streesbuster{
-    width: 400px;  /* Ancho de la imagen */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
-}
+
+/* Slider imágenes */
 .slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    
-}
-.slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    overflow: hidden;
-    background: #000;
-    
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background: #000;
 }
 
 .slider-images {
-    display:flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider-images .slide {
-    min-width: 50%;
-    box-sizing: border-box;
-    
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider-images img {
-    width: 100%;
-    height: 550px;
-    display: block;
-    
+  width: 100%;
+  height: auto;
 }
 
 .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--cream);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .prev-button {
-    left: 10px;
+  left: 10px;
 }
 
 .next-button {
-    right: 10px;
+  right: 10px;
+}
+
+/* Imagen perfil */
+.foto-inicio {
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Clase para imágenes verticales y responsivas */
+.img-vertical-responsive {
+  max-width: 300px; /* Puedes ajustar este valor.*/
+  height: auto; /* Mantiene la proporción original de la imagen */
+  display: block; /* Para que los márgenes auto funcionen si la centras */
+  margin-left: auto; /* Para centrar la imagen */
+  margin-right: auto; /* Para centrar la imagen */
+  border-radius: 10px; /* Opcional: si quieres bordes redondeados */
+}
+
+/* Clase para imágenes horizontales y responsivas */
+.img-horizontal-responsive {
+  max-width: 600px; /* Ajusta este valor según el tamaño deseado. */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  display: block; /* Para que los márgenes auto funcionen si la centras */
+  margin-left: auto; /* Para centrar la imagen */
+  margin-right: auto; /* Para centrar la imagen */
+  border-radius: 10px; /* Opcional: si quieres bordes redondeados */
 }
